@@ -1,0 +1,212 @@
+<html></html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title> virtual keyboard| Shivani</title>
+            <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+            <style>
+                body{
+                    background-color: rgb(12, 12, 12);
+                }
+              .container{
+                margin:110px 0 0 160px;
+              } 
+              .row{
+                width:100%;
+                height: 60px;
+              }  
+              .one,.two,.three,.four,.five{
+                margin: 10px 0 0 0;
+              }
+              button{
+                color:rgb(255,255,255);
+                width: 55px;
+                height: 55px;
+                border: none;
+                background: rgb(0,0,0);
+                box-shadow: 5px 5px 10px #1be510,-5px -5px 10px #06b615;
+                font-size: 20px;
+                margin-left: 5px;
+                outline: none;
+                font-family: serif;
+                border-radius: 20%;
+              }
+              button:active{
+                box-shadow: 1px 1px 2px #858383,-1px -1px 2px#0a0a0a;
+              }
+              .back{
+                     width: 115px;
+                     border-radius: 10px;
+              }
+              .tab{
+                   width: 85px;
+                   border-radius: 10px;
+              }
+              .slace{
+                width: 85px;
+                border-radius: 10px;
+              }
+              .cap{
+                width: 100px;
+                border-radius: 10px;   
+              }
+              .space{
+                width: 305px;
+                border-radius: 20px;
+              }
+              .ent-btn{
+                width: 135px;
+                border-radius: 10px;
+              }
+              .shift{
+                width: 115px;
+                border-radius: 10px;
+              }
+              .ent-btn i{
+                text-align: left;
+              }
+              .other{
+            position: relative;
+            display: inline-block;
+              }
+            .dropdown-content{
+           display: none; 
+           position: absolute;
+           background-color: #f9f9f9;
+           min-width: 160;
+           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           z-index: 1;
+        }
+        .dropdown-content a{
+            color: black;
+            padding: 12px 12px;
+            text-decoration: none;
+            display:block;
+        }
+        .dropdown-content a:hover{
+            background-color: #f1f1f1;
+        }
+        .other:hover .dropdown-content{
+            display: block;
+        }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="row one">
+                    <button>ESC</button>
+                    <button>F1</button>
+                    <button>F2</button>
+                    <button>F3</button>
+                    <button>F4</button>
+                    <button>F5</button>
+                    <button>F6</button>
+                    <button>F7</button>
+                    <button>F8</button>
+                    <button>F9</button>
+                    <button>F10</button>
+                    <button>F11</button>
+                    <button>F12</button>
+                    <button class="insert">insert</button>
+                    <button class="delete">delete</button>
+                   
+
+                    <div class="row two">
+                        <button>~</button>
+                        <button>1</button> 
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button>0</button>
+                        <button>-</button>
+                        <button>=</button>
+                        <button class="back">Backspace</button>
+
+                    </div>
+                        <div class="row-three">
+                            <button class="tab">TAB</button>
+                            <button>Q</button>
+                            <button>W</button>
+                            <button>E</button>
+                            <button>R</button>
+                            <button>T</button>
+                            <button>Y</button>
+                            <button>U</button>
+                            <button>I</button>
+                            <button>O</button>
+                            <button>P</button>
+                            <button>[</button>
+                            <button>]</button>
+                            <button class="slace">\</button>
+                    </div>
+                    <div class="row four">
+                        <button class="cap">Caps Lock</button>
+                        <button>A</button>
+                        <button>S</button>
+                        <button>D</button>
+                        <button>F</button>
+                        <button>G</button>
+                        <button>H</button>
+                        <button>J</button>
+                        <button>K</button>
+                        <button>L</button>
+                        <button>;</button>
+                        <button>'</button>
+                        <button class="ent-btn"><i class="ri-corner-down-left-line"></i>    Enter</button>
+
+                    </div>
+                    <div class="row five">
+                        <button class="shift">Shift</button>
+                        <button>Z</button>
+                        <button>X</button>
+                        <button>C</button>
+                        <button>V</button>
+                        <button>B</button>
+                        <button>N</button>
+                        <button>M</button>
+                        <button><</button>
+                        <button>></button>
+                        <button>?</button>
+                        <button>▲</button>
+                        <button class="shift">Shift</button>
+                    </div>
+                    <div class="row six">
+                        <button class="other">Ctrl</button>
+                        <button class="other">Fn</button>
+                        <button class="other"><i class="ri-windows-fill"></i></button>
+                        <button class="other">Alt</button>
+                        <button class="space"> Space</button>
+                        <button class="other">Alt</button>
+                        <button class="other">Ctrl</button>
+                        <button>◄</button>
+                        <button>▼</button>
+                        <button>►</button>
+                        <button class="other">
+                            <i class="ri-global-line"></i>
+                            <div class="dropdown-content">
+                                <a href="hindi.html">Hindi</a>
+                                <a href="punjabi.html">Punjabi</a>
+                                <a href="tamil.html">Tamil</a>
+                            </div>
+                        </button>
+                    </div>
+        
+                    </div>
+
+   
+  
+</div>    
+</div>                                                     
+                </div>            
+            </div>
+        </body>
+    </html>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page of virtual keyboard</title>
+    <style>
+        *{
+    background-image: url('https://wallpapers.com/images/featured/keyboard-background-z7fm47jyvkt01937.jpg');
+    border-image-width: 20px;
+    
+}
+button{
+    background: rgb(57, 74, 91);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   font-family: sans-serif; 
+}
+body{
+    background-color: white;
+}
+.parent{
+    display: flex;
+    gap: 120px;
+    margin: 20px;
+    margin-top: 0px;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card {
+    position: relative;
+    background: rgb(56, 56, 56);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.card::after {
+    width: 80px;
+    height: 80px;
+    top: auto;
+    bottom: -20px;
+    left: auto;
+    right: -20px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: whitesmoke;
+    overflow-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.card-link:active {
+    color: #003d7a;
+}
+
+    
+    </style>
+</head>
+<body>
+    <center><h1 style="color: white;">Welcome to Virtual keyboard</h1></center>
+    <center><p style="color: aliceblue;">Discover everything you need for a seamless virtual typing experience!</p></center>
+    <br><br>
+    <center><h3 style="color: antiquewhite;">Try the virtual Keyboard!</h3></center>
+    <center><textarea name="feedback" placeholder="Start typing..." rows="1" cols="-300"></textarea></center>
+    <center> <div class="row-one">
+        <button style="color: azure;">Q</button>
+        <button style="color: azure;">W</button>
+        <button style="color: azure;">E</button>
+        <button style="color: azure;">R</button>
+        <button style="color: azure;">T</button>
+        <button style="color: azure;">Y</button>
+        <button style="color: azure;">U</button>
+        <button style="color: azure;">I</button>
+        <button style="color: azure;">O</button>
+        <button style="color: azure;">P</button>
+    </div></center>
+    <center> <div class="row-two">
+        <button style="color: azure;">A</button>
+        <button style="color: azure;">S</button>
+        <button style="color: azure;">D</button>
+        <button style="color: azure;">F</button>
+        <button style="color: azure;">G</button>
+        <button style="color: azure;">H</button>
+        <button style="color: azure;">J</button>
+        <button style="color: azure;">K</button>
+        <button style="color: azure;">L</button>
+    </div></center>
+    <center> <div class="row-THREE">
+        <button style="color: azure;">Z</button>
+        <button style="color: azure;">X</button>
+        <button style="color: azure;">C</button>
+        <button style="color: azure;">V</button>
+        <button style="color: azure;">B</button>
+        <button style="color: azure;">N</button>
+        <button style="color: azure;">M</button>
+    </div></center>
+    <center> <div class="row FOUR-">
+        <button style="color: azure;">SPACE BAR</button>
+        <br>
+        <div class="parent">
+        <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title">Change Language</h2>
+                <p class="card-description">Select your preffered keyboard Language.</p>
+                <button style="color: antiquewhite;">Choose Language</button>
+            </div>
+           </div>
+        </div>    
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Change Language</h2>
+                    <p class="card-description">Select your preffered keyboard Language.</p>
+                    <button style="color: antiquewhite;">Choose Language</button>
+                </div>
+               </div>
+            </div>    
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Change Language</h2>
+                        <p class="card-description">Select your preffered keyboard Language.</p>
+                        <button style="color: antiquewhite;">Choose Language</button>
+                    </div>
+                   </div>
+                </div>    
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title">Change Language</h2>
+                            <p class="card-description">Select your preffered keyboard Language.</p>
+                            <button style="color: antiquewhite;">Choose Language</button>
+                        </div>
+                       </div>
+                    </div>    
+    </div>
+</body>
+</html>
